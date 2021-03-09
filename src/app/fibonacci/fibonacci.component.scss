@@ -1,4 +1,18 @@
 .fibonacci-wrapper {
   padding: 2rem;
   width: 100%;
+
+  .content {
+    padding: 2rem;
+    .title {
+      margin-bottom: 2rem;
+    }
+    .fibonacci {
+      display: flex;
+      margin-bottom: 2rem;
+    }
+    button {
+      background: var(--secondary-color);
+    }
+  }
 }

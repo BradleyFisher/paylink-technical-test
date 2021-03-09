@@ -1,5 +1,20 @@
 <div class="fibonacci-wrapper">
   <app-panel>
-    <p>fibonacci</p>
+    <div class="content">
+      <p class="title">
+        Fibonacci calculation. Please see the developer console to also view the outcome printed to the console.
+      </p>
+      <div class="fibonacci">
+        <!-- <ng-container *ngIf="(stream.loading$ | async) else loaded">
+          <p>Please wait...</p>
+        </ng-container>
+        <ng-template #loaded>
+          <div *ngFor="let outcome of (stream.fizzBuzzArray$ | async)">
+            <p>{{outcome}} &nbsp; &nbsp;</p>
+          </div>
+        </ng-template> -->
+      </div>
+      <button>Run Again</button>
+    </div>
   </app-panel>
 </div>

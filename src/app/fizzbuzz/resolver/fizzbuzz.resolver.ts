@@ -15,7 +15,6 @@ export class FizzbuzzResolver implements Resolve<any> {
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
   ): Observable<any> | Promise<any> | any {
-    console.log('fizzbuzz resolver running.');
     return this.service.init();
   }
 }
