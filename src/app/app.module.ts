@@ -9,9 +9,10 @@ import { FibonacciComponent } from './fibonacci/fibonacci.component';
 import { MagicGetSetComponent } from './magic-get-set/magic-get-set.component';
 import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
 import { ProfileImageComponent } from './shared/components/profile-image/profile-image.component';
+import { PanelComponent } from './shared/components/panel/panel.component';
 
 @NgModule({
-  declarations: [AppComponent, FizzbuzzComponent, FibonacciComponent, MagicGetSetComponent, SidebarComponent, ProfileImageComponent],
+  declarations: [AppComponent, FizzbuzzComponent, FibonacciComponent, MagicGetSetComponent, SidebarComponent, ProfileImageComponent, PanelComponent],
   imports: [BrowserModule, AppRoutingModule, RouterModule],
   providers: [],
   bootstrap: [AppComponent],
