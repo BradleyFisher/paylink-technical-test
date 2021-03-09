@@ -1,0 +1,31 @@
+<div class="sidebar-wrapper">
+  <div class="content">
+    <div class="image">
+      <app-profile-image></app-profile-image>
+    </div>
+    <h3>Bradley Fisher</h3>
+    <p>
+      Thank you for taking the time to view my technical assessment.
+    </p>
+    <p>
+      Please click on the links below to view the different tests.
+    </p>
+    <ul class="links">
+      <li
+        [routerLink]="['/fizzbuzz']"
+        routerLinkActive="active-link">
+        Fizzbuzz
+      </li>
+      <li
+        [routerLink]="['/fibonacci']"
+        routerLinkActive="active-link">
+        Fibonacci
+      </li>
+      <li
+        [routerLink]="['/magic-get-set']"
+        routerLinkActive="active-link">
+        MagicGetSet
+      </li>
+    </ul>
+  </div>
+</div>

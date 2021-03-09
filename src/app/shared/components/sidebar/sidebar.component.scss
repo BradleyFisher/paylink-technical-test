@@ -1,0 +1,37 @@
+.sidebar-wrapper {
+  background: var(--panel-background);
+  height: 100%;
+  width: 330px; // to be revised.
+
+  .content {
+    padding-top: 2rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    h3 {
+      margin-top: 1.5rem;
+      font-weight: 400;
+      font-size: 2rem;
+    }
+    p {
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .links {
+      width: 100%;
+      li {
+        padding: 1.5rem;
+        border-top: 1px solid var(--border-color);
+        outline: none;
+        transition: 1s;
+        cursor: pointer;
+        &:last-child {
+          border-bottom: 1px solid var(--border-color);
+        }
+        &.active-link {
+          background: var(--primary-color);
+        }
+      }
+    }
+  }
+}

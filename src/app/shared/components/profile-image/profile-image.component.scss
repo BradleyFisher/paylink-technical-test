@@ -1,0 +1,19 @@
+.image-wrapper {
+  display: inline-block;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  transition: 1s;
+  &:hover {
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+  }
+  img {
+    width: auto;
+    height: 100%;
+    margin-left: -20px;
+  }
+}
