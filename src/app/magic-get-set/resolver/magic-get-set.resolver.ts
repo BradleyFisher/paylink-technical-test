@@ -5,17 +5,17 @@ import {
   RouterStateSnapshot,
 } from '@angular/router';
 import { Observable } from 'rxjs';
-import { FizzbuzzService } from '../services/fizzbuzz.service';
+import { MagicGetSetService } from '../services/magic-get-set.service';
 
 @Injectable({ providedIn: 'root' })
-export class FizzbuzzResolver implements Resolve<any> {
-  constructor(private service: FizzbuzzService) {}
+export class MagicGetSetResolver implements Resolve<any> {
+  constructor(private service: MagicGetSetService) {}
 
   resolve(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
   ): Observable<any> | Promise<any> | any {
-    console.log('fizzbuzz resolver running.');
+    console.log('magic resolver running.');
     return this.service.init();
   }
 }

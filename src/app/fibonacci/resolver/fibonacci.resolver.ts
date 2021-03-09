@@ -5,17 +5,17 @@ import {
   RouterStateSnapshot,
 } from '@angular/router';
 import { Observable } from 'rxjs';
-import { FizzbuzzService } from '../services/fizzbuzz.service';
+import { FibonacciService } from '../services/fibonacci.service';
 
 @Injectable({ providedIn: 'root' })
-export class FizzbuzzResolver implements Resolve<any> {
-  constructor(private service: FizzbuzzService) {}
+export class FibonacciResolver implements Resolve<any> {
+  constructor(private service: FibonacciService) {}
 
   resolve(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
   ): Observable<any> | Promise<any> | any {
-    console.log('fizzbuzz resolver running.');
+    console.log('fibonacci resolver running.');
     return this.service.init();
   }
 }
