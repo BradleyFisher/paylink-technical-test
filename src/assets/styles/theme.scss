@@ -1,0 +1,21 @@
+$primaryColor: #0fcf90;
+$secondaryColor: #696ffb;
+$textColor: #ffffff;
+$textSecondaryColor: #c0c0c0;
+$background: #202225;
+$panelBackground: #212529;
+$borderColor: #f0f0f0;
+$errorColor: #ed4b40;
+$successColor: #01ab5d;
+
+:root {
+  --primary-color: #{$primaryColor};
+  --secondary-color: #{$secondaryColor};
+  --text-color: #{$textColor};
+  --text-secondary-color: #{$textSecondaryColor};
+  --background: #{$background};
+  --panel-background: #{$panelBackground};
+  --border-color: #{$borderColor};
+  --error-color: #{$errorColor};
+  --success-color: #{$successColor};
+}
