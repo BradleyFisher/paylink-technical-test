@@ -1,18 +1,50 @@
 .magic-wrapper {
-  padding: 2rem;
   width: 100%;
-
-  .content {
+  .inner-wrapper {
     padding: 2rem;
-    .title {
-      margin-bottom: 2rem;
-    }
-    .magic {
-      display: flex;
-      margin-bottom: 2rem;
-    }
-    button {
-      background: var(--secondary-color);
+    .content {
+      padding: 2rem;
+      .intro {
+        margin-bottom: 1rem;
+        display: flex;
+        flex-flow: column;
+        p {
+          margin-bottom: 1rem;
+        }
+      }
+      .magic {
+        display: flex;
+        margin-bottom: 2rem;
+
+        .person {
+          display: flex;
+          flex-flow: column;
+          .info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            label {
+              margin-right: 0.5rem;
+            }
+            input {
+              background-color: var(--background);
+              border: 0px;
+              padding: 0.5rem;
+              border: 1px solid var(--border-color);
+              border-radius: 10px;
+              margin-right: 1rem;
+              color: #fff;
+              &:focus {
+                outline: none;
+                border: 1px solid var(--primary-color);
+              }
+            }
+          }
+        }
+      }
+      button {
+        background: var(--secondary-color);
+      }
     }
   }
 }

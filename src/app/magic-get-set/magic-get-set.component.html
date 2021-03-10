@@ -1,20 +1,55 @@
 <div class="magic-wrapper">
-  <app-panel>
-    <div class="content">
-      <p class="title">
-        Magic Get Setter calculation. Please see the developer console to also view the outcome printed to the console.
-      </p>
-      <div class="magic">
-        <!-- <ng-container *ngIf="(stream.loading$ | async) else loaded">
-          <p>Please wait...</p>
-        </ng-container>
-        <ng-template #loaded>
-          <div *ngFor="let outcome of (stream.fizzBuzzArray$ | async)">
-            <p>{{outcome}} &nbsp; &nbsp;</p>
-          </div>
-        </ng-template> -->
+  <div class="inner-wrapper">
+    <app-panel>
+      <div class="content">
+        <div class="intro">
+          <p>Magic Get Setter Class.</p>
+          <p>
+            While this is named MagicGetterSetter to match the test criteria. The properties I have used are based on a simple Person object.
+          </p>
+          <p>
+            I have used a class for this implementation due to my own understanding of class and interface best practices.
+          I feel that interfaces are best suited for typing an API response for objects which will not be created in the front end.
+          </p>
+          <p>
+            For example of a CRUD section - a person listItem to display in a table containing a subset of a detail, I would define as an interface. 
+          However, a full person object which would be created from a form or another method to send back to the API, I would create a class due to the power of the constructor.
+          </p>
+          <p>
+            In this created example, I have set my default properties on creating a new instance of the class as I believe this helps make the class more re-usable.
+          </p>
+          <p>
+            To demonstrate the class, I have created the below. Please attempt to set a career without the word "developer" to see the error handler in action. Alternatively,
+            if you set the career to 'React Developer', you will see the getter update.
+          </p>
+        </div>
+        <div class="magic">
+          <ng-container *ngIf="(stream.loading$ | async) else loaded">
+            <p>Please wait...</p>
+          </ng-container>
+          <ng-template #loaded>
+            <div class="person">
+              <div class="info">
+                <label>Name:</label>
+                <p>
+                  {{(stream.magicClass$ | async)?.fullName}}
+                </p>
+              </div>
+              <div class="info">
+                <label>Career:</label>
+                <p>
+                  {{(stream.magicClass$ | async)?.personCareer}}
+                </p>
+              </div>
+              <div class="info">
+                <label>Set Career:</label>
+                <input [(ngModel)]="setCareerValue">
+              </div>
+            </div>
+          </ng-template>
+        </div>
+        <button (click)="setCareer()">Use Setter to Update Career</button>
       </div>
-      <button>Run Again</button>
-    </div>
-  </app-panel>
+    </app-panel>
+  </div>
 </div>

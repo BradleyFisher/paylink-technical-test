@@ -1,18 +1,20 @@
 .fizzbuzz-wrapper {
-  padding: 2rem;
   width: 100%;
 
-  .content {
+  .inner-wrapper {
     padding: 2rem;
-    .title {
-      margin-bottom: 2rem;
-    }
-    .fizzbuzz {
-      display: flex;
-      margin-bottom: 2rem;
-    }
-    button {
-      background: var(--secondary-color);
+    .content {
+      padding: 2rem;
+      .title {
+        margin-bottom: 2rem;
+      }
+      .fizzbuzz {
+        display: flex;
+        margin-bottom: 2rem;
+      }
+      button {
+        background: var(--secondary-color);
+      }
     }
   }
 }

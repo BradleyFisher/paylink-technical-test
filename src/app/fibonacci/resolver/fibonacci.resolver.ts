@@ -15,7 +15,6 @@ export class FibonacciResolver implements Resolve<any> {
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
   ): Observable<any> | Promise<any> | any {
-    console.log('fibonacci resolver running.');
     return this.service.init();
   }
 }

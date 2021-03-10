@@ -2,6 +2,6 @@
   height: 100%;
   display: flex;
   .route {
-    width: 79%; // this isn't right but will leave it for now.
+    flex-grow: 1;
   }
 }

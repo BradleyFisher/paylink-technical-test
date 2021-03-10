@@ -40,11 +40,9 @@ export class FizzbuzzService {
           outcome = i.toString();
           break;
       }
-      console.log(outcome);
       array.push(outcome);
     }
     this.state.fizzBuzzArray.next(array);
-    console.log(array);
     setTimeout(() => {
       // just to display loader state example.
       this.state.loading.next(false);

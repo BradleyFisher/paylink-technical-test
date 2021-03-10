@@ -15,7 +15,6 @@ export class MagicGetSetResolver implements Resolve<any> {
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
   ): Observable<any> | Promise<any> | any {
-    console.log('magic resolver running.');
     return this.service.init();
   }
 }
