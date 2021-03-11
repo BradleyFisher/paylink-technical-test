@@ -1,10 +1,11 @@
 <div class="fizzbuzz-wrapper">
   <div class="inner-wrapper">
-
     <app-panel>
       <div class="content">
         <p class="title">
-          Fizzbuzz calculation. Please see the developer console to also view the outcome printed to the console.
+          Fizzbuzz calculation. Please see
+          <i>fizzbuzz.service.ts</i>
+          for my implementation. Thank you.
         </p>
         <div class="fizzbuzz">
           <ng-container *ngIf="(stream.loading$ | async) else loaded">

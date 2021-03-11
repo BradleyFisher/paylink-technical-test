@@ -9,6 +9,7 @@ import { FizzbuzzService } from './services/fizzbuzz.service';
 })
 export class FizzbuzzComponent implements OnInit {
   readonly stream = this.service.stream;
+
   constructor(private service: FizzbuzzService) {}
 
   ngOnInit(): void {}

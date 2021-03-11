@@ -19,6 +19,7 @@ export class MagicGetSetComponent implements OnInit, OnDestroy {
   private subscriptions: Subscription = new Subscription();
 
   public setCareerValue = '';
+
   constructor(private service: MagicGetSetService) {}
 
   ngOnInit(): void {
@@ -33,7 +34,7 @@ export class MagicGetSetComponent implements OnInit, OnDestroy {
     this.subscriptions.unsubscribe();
   }
 
-  setCareer(): void {
+  public setCareer(): void {
     this.service.setCareer(this.setCareerValue);
   }
 }

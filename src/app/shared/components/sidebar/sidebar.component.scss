@@ -1,7 +1,7 @@
 .sidebar-wrapper {
   background: var(--panel-background);
   height: 100%;
-  width: 330px; // to be revised.
+  width: 330px; // not the most responsive friendly
 
   .content {
     padding-top: 2rem;
@@ -28,7 +28,8 @@
         &:last-child {
           border-bottom: 1px solid var(--border-color);
         }
-        &.active-link {
+        &.active-link,
+        &:hover {
           background: var(--primary-color);
         }
       }

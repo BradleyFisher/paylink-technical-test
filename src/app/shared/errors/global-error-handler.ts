@@ -4,11 +4,12 @@ import { ToastrService } from 'ngx-toastr';
 @Injectable()
 export class GlobalErrorHandler implements ErrorHandler {
   constructor(@Inject(Injector) private injector: Injector) {}
+
   private get notifierService(): ToastrService {
     return this.injector.get(ToastrService);
   }
-  handleError(error): any {
+
+  handleError(error): void {
     this.notifierService.error(error);
-    // do something with the exception
   }
 }
